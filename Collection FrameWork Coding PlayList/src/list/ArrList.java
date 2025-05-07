@@ -3,7 +3,18 @@ package list;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+class StringLengthComparator implements Comparator<String>{
+
+	@Override
+	public int compare(String o1, String o2) {
+		// if return is +ve than o1 will come after o2 and if it is -ve than o1 will come first for zero(0) but are equal in priority of ordering.
+		return o1.length() - o2.length();
+	}
+	
+}
 
 public class ArrList {
 
@@ -61,8 +72,18 @@ public class ArrList {
 		System.out.println(list);
 		
 		Collections.sort(list); // no return type 
+		// we can also use (using comparator interface(used for custom ordering )  ) 
+		 list.sort(null);
 		
 		System.out.println(list);
+		
+		
+		//if we want to sort string than also we can use comparator interface 
+		List<String> wordList = Arrays.asList("ram", "shyaam","arjun");
+		// wordList.sort(null); // this will print acc to alphabte order like a than b and soo on (here it will print -> arjun, ram, shyam)
+		
+		wordList.sort(new StringLengthComparator());
+		System.out.println(wordList);
 	}
 
 }
