@@ -73,7 +73,7 @@ public class ArrList {
 		
 		Collections.sort(list); // no return type 
 		// we can also use (using comparator interface(used for custom ordering )  ) 
-		 list.sort(null);
+		// list.sort(null);
 		
 		System.out.println(list);
 		
