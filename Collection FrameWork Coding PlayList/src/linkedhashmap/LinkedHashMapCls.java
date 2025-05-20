@@ -1,5 +1,6 @@
 package linkedhashmap;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -15,6 +16,7 @@ public class LinkedHashMapCls {
 		linkedHashMap.put("Guava", 13);
 		
 		//here we try to access Apple first than Orange 
+		// we can remove the list recent used data (by this we can find which data is access less ).
 		linkedHashMap.get("Apple");
 		linkedHashMap.get("Orange");
 		
@@ -22,6 +24,19 @@ public class LinkedHashMapCls {
 		for(Map.Entry<String, Integer> entry : linkedHashMap.entrySet()) {
 			 System.out.println(entry.getKey() +": "+ entry.getValue());
 		}
+		
+		
+		// some methods that are missed in hashmap :-
+		HashMap<String, Integer> hashMap = new HashMap<>();
+		
+		hashMap.put("Shubam", 91);
+		hashMap.put("Bob", 88);
+		hashMap.put("Akshit", 78);
+		
+		Integer res = hashMap.getOrDefault("Vipul", 0); // return the value if key is present if not than return default.
+		hashMap.putIfAbsent("Rohit", 92); // put rohit if not in the hashmap or if present than no change.
+		System.out.println(hashMap);
+		
 		
 		
 	}
