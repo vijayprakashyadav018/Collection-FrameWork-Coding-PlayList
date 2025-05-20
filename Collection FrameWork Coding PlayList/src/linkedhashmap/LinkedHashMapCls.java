@@ -18,6 +18,10 @@ public class LinkedHashMapCls {
 		linkedHashMap.get("Apple");
 		linkedHashMap.get("Orange");
 		
+		// in LinkedHashMap oderded is maintained but it in HashMap it is not.
+		for(Map.Entry<String, Integer> entry : linkedHashMap.entrySet()) {
+			 System.out.println(entry.getKey() +": "+ entry.getValue());
+		}
 		
 		
 	}
