@@ -33,6 +33,8 @@ public class HashCodeAndEqualsMethod {
 		map1.put("Rahul", 92); //hashcode2 --> index2
 		map1.put("Shivam", 99); //hashcode1 --> index1 --> equals() --> replace (it will change the shivam marks from 90 to 99)
 		
+		System.out.println(map1.get("Shivam"));
+		System.out.println(map1.get("Shivam"));
 	}
 	
 	
