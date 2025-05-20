@@ -14,7 +14,11 @@ public class LinkedHashMapCls {
 		linkedHashMap.put("Apple", 20);
 		linkedHashMap.put("Guava", 13);
 		
-	
+		//here we try to access Apple first than Orange 
+		linkedHashMap.get("Apple");
+		linkedHashMap.get("Orange");
+		
+		
 		
 	}
 	
