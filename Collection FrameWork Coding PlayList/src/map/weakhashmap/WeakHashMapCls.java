@@ -1,5 +1,6 @@
 package map.weakhashmap;
 
+import java.util.Map;
 import java.util.WeakHashMap;
 
 public class WeakHashMapCls {
@@ -15,13 +16,26 @@ public class WeakHashMapCls {
 		
 		
 		// here they will be removed by JVM (garbage collector )
-		imageCache.put(new String("img1"), new Image("Image 1"));
-		imageCache.put(new String("img2"), new Image("Image 2"));
+//		imageCache.put(new String("img1"), new Image("Image 1"));
+//		imageCache.put(new String("img2"), new Image("Image 2"));
+		
+		
+		loadCache(imageCache);
 		System.out.println(imageCache);
-		System.gc(); // it is just to explain how it will work but in real production we not write this.
+		//System.gc(); // it is just to explain how it will work but in real production we not write this.
 		simulateApplicationRunning();
 		System.out.println("Cache after running (some entries may be cleared): "+ imageCache);
 
+	}
+	
+	// we can alsoo try like this
+	public static void loadCache(Map<String, Image> imageCache) {
+		
+		String k1 =new String("img1");
+		String k2 =new String("img2");
+		imageCache.put(k1, new Image("Image 1"));
+ 		imageCache.put(k2, new Image("Image 2"));
+		
 	}
 
 	private static void simulateApplicationRunning() {
