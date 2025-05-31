@@ -21,6 +21,10 @@ public class SortedMapCls {
 		System.out.println(map.headMap(91)); // exclude
 		System.out.println(map.tailMap(91)); // include
 
+		// time complexities.
+	    map.get(77); // log(n)
+	    map.containsKey(78); // log(n)
+	    map.containsValue(77); // O(n)
 		
 		
 		// custom ordering (here we use comparator)
