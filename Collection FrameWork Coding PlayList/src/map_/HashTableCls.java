@@ -11,7 +11,7 @@ public class HashTableCls {
 		// no null key or value
 		// Legacy Class (rarely used ) now replace by --> ConcurrentHashMap
 		// slower than hashmap
-		// hashmap is not thread sefe but hahstable is thread safe.
+		// hashmap is not thread sefe but hashtable is thread safe.
 		// only LinkedList used even in case of collision.(binary tree not used)
 		// All methods are synchronized.
 		hashtable.put(1, "Apple");
