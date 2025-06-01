@@ -1,5 +1,6 @@
 package sortedmap;
 
+import java.util.NavigableMap;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -39,6 +40,21 @@ public class SortedMapCls {
 		System.out.println(map1.lastKey());
 		System.out.println(map1.headMap(91)); // exclude
 		System.out.println(map1.tailMap(91)); // include
+		
+		
+		
+		// NavigableMap Interface
+		NavigableMap<Integer, String> navigableMap = new TreeMap<>();
+		navigableMap.put(1, "One");
+		navigableMap.put(5, "Five");
+		navigableMap.put(3, "Three");
+		navigableMap.put(7, "Seven");
+		System.out.println(navigableMap);
+		System.out.println(navigableMap.lowerKey(4)); //Returns the greatest key strictly less than the given key, or null if there is no such key.
+		System.out.println(navigableMap.ceilingKey(4)); //Returns the least key greater than or equal to the given key,or null if there is no such key.
+		System.out.println(navigableMap.higherEntry(3));
+		System.out.println(navigableMap.descendingMap());
+		
 	}
 
 }
