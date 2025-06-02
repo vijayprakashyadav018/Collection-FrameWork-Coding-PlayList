@@ -16,7 +16,7 @@ public class ImmutableMapCls {
 		System.out.println(map2);
 		// map2.put("C", 3); // throws exception
 		Map<String, Integer> map3 = Map.of("Shubam", 98, "Vivek", 89); // here we can add 10 entries only.
-	//	map3.put("Akshit", 88); // throws exception 
+		// map3.put("Akshit", 88); // throws exception 
 		
 		Map<String, Integer> map4 = Map.ofEntries(Map.entry("akshit", 99), Map.entry("Vivek", 98)); // here we can add as many as entries as we like.
 
