@@ -52,7 +52,7 @@ public class SetInterfaceExplaination {
 		// But its performance is very low and complexity is also high.
 		Set<Integer> integers = Collections.synchronizedSet(set); // this will put the set into the synchronized block.
 		
-		// For better performance we use ConcurrentSkipListSet.
+		// For better performance and also give output in sorted mannner we use ConcurrentSkipListSet.
 		Set<Integer> set5 = new ConcurrentSkipListSet<>();
 		
 		// for unmodifiable
