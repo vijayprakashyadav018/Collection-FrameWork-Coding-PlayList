@@ -30,14 +30,14 @@ public class LinkedListAsQueue {
 	    implements List<E>, Deque<E>, Cloneable, java.io.Serializable
 		*/
 		
-		Queue<Integer> list1 = new LinkedList<>();
+		Queue<Integer> queue1 = new LinkedList<>();
 		// Here LinkedList methods will follow the FIFO princple as Queue 
-		list1.add(1); // work same as addLast() of Linked List 
-		list1.add(2);
-		list1.add(3);
-		System.out.println(list1);
-		Integer  i1 = list1.remove(); // dequeue
-		System.out.println(list1);
+		queue1.add(1); // work same as addLast() of Linked List 
+		queue1.add(2);
+		queue1.add(3);
+		System.out.println(queue1);
+		Integer  i1 = queue1.remove(); // dequeue
+		System.out.println(queue1);
 		
 		
 		// Difference BTW Remove and Poll, Peek and Element
