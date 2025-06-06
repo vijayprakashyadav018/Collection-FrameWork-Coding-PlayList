@@ -1,13 +1,8 @@
 package queue;
 
-import java.util.AbstractSequentialList;
-import java.util.Deque;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
-
-import javax.sound.midi.VoiceStatus;
 
 public class LinkedListAsQueue {
 
