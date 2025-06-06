@@ -52,6 +52,7 @@ public class LinkedListAsQueue {
 		// System.out.println(queue2.add(3)); // this will throws the exception.
 		System.out.println(queue2.offer(3)); // false (this will not add the element but also not  throw exception )
 		
+		//
 	}
 	
 }
