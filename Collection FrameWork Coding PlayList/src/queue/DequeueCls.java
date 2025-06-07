@@ -77,10 +77,10 @@ public class DequeueCls {
 		
 		
 		
-		// LinkedList as Deque --> we use this when we need insertion, deletion somewhere in middle.
+		// LinkedList as Deque --> we use this when we need insertion, deletion somewhere in middle.0
 		Deque<Integer> deque2 = new LinkedList<>();
 		
-		
+		//
 	}
 
 }
