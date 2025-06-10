@@ -5,6 +5,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class ConcurrentLinkedQueueCls {
 
 	private static ConcurrentLinkedQueue<String> task = new ConcurrentLinkedQueue<>();
+	// here also compair and swap method used like concurrentHashMap
 	
 	public static void main(String[] args) {
 		
