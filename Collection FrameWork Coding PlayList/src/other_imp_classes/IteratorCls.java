@@ -2,6 +2,7 @@ package other_imp_classes;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class IteratorCls {
 
@@ -19,6 +20,24 @@ public class IteratorCls {
 			System.out.println(iterator.next());
 		}
 
+		// Itrator also give the functionality to REMOVE while iterating  
+		List<Integer> number = new ArrayList<>();
+		number.add(1);
+		number.add(2);
+		number.add(3);
+		number.add(4);
+		number.add(5);
+		
+		Iterator<Integer> itr = number.iterator();
+		while (itr.hasNext()) {
+			Integer integer = itr.next();
+			if (integer % 2 == 0) {
+				itr.remove();
+			}
+		}
+		
+		System.out.println(number);
+		
 	}
 
 }
