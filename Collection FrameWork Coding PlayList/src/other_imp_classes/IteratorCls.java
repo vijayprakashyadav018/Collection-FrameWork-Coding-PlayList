@@ -44,7 +44,7 @@ public class IteratorCls {
 				itr.remove();
 			}
 		}
-		//
+		
 		System.out.println(number);
 		
 	}
