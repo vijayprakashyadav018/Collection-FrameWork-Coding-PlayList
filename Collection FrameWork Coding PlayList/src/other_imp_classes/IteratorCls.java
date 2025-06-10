@@ -35,6 +35,8 @@ public class IteratorCls {
 //			}
 //		}
 		
+		
+		// this will not give exception we can remove while iterate 
 		Iterator<Integer> itr = number.iterator();
 		while (itr.hasNext()) {
 			Integer integer = itr.next();
@@ -42,7 +44,7 @@ public class IteratorCls {
 				itr.remove();
 			}
 		}
-		
+		//
 		System.out.println(number);
 		
 	}
