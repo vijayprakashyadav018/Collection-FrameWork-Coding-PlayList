@@ -28,6 +28,13 @@ public class IteratorCls {
 		number.add(4);
 		number.add(5);
 		
+		// THIS WILL GIVE CONCURRENTMODIFICATION EXCEPTION --
+//		for (Integer integer : number) {
+//			if (integer % 2 ==0) {
+//				number.remove(0);
+//			}
+//		}
+		
 		Iterator<Integer> itr = number.iterator();
 		while (itr.hasNext()) {
 			Integer integer = itr.next();
