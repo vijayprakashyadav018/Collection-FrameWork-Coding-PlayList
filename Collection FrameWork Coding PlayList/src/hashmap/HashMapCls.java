@@ -15,7 +15,7 @@ public class HashMapCls {
 		map.put(1, "Rahul");
 		System.out.println(map);
 		
-		//aa
+		
 		
 		String student = map.get(11);
 		System.out.println(student);
